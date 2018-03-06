@@ -15,5 +15,27 @@ import java.util.Scanner;
 
 public class Exercise_02 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user to get Radius
+        System.out.print("What is the radius? : ");
+        // assign input to variable as int
+        double r = scanner.nextInt();
+
+        // prompt user to get Length
+        System.out.print("What is the length? : ");
+        // assign input to variable as int
+        double l = scanner.nextInt();
+
+        //Volume formula
+        double v = (Math.PI*r*r*l);
+        // Area formula
+        double a = (2*Math.PI*r*l) + (2*Math.PI*Math.pow(r,2));
+
+        System.out.println("Cool beans, the area is " + a + " and the volume is " + v);
+
+    }
+
 
 }

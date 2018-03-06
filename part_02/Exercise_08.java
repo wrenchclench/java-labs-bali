@@ -12,5 +12,24 @@ import java.util.Scanner;
  */
 public class Exercise_08 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("Guess a number: ");
+        // assign input to variable as int
+        int guess = scanner.nextInt();
+
+        while (guess != 59){
+            System.out.println("Nope, keep guessing..");
+            break;
+        }
+        while (guess == 59) {
+            System.out.println("Yep, it was 59.");
+            break;
+
+        }
+    }
+
 }
 

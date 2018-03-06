@@ -13,4 +13,17 @@ import java.util.Scanner;
 
 public class Exercise_03 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user for feet
+        System.out.print("How many feet?:  ");
+        // assign input to variable as int
+        double f = scanner.nextInt();
+
+        double m = f*.305;
+
+        System.out.println("That's " + m + "in meters");
+    }
+
 }

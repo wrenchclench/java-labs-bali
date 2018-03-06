@@ -11,6 +11,13 @@ package part_01;
  *
  */
 public class Exercise_04 {
+     public static void main(String[] args) {
+         System.out.println("a  a*2 a*4");
+         System.out.println("1  2   4");
+         System.out.println("....");
+         System.out.println("4  8   16");
+         }
+     }
 
-}
+
 

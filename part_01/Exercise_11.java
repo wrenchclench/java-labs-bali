@@ -15,4 +15,21 @@ package part_01;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+
+        long pop = 380123456;
+        long born = 6;
+        long died = 12;
+        long immigrate = 40;
+        long time = 94608000;
+
+        long bday = time/born;
+        long funeral = time/died;
+        long welcome = time/immigrate;
+
+        long answer = (pop+bday+welcome)-funeral;
+
+        System.out.println("After 3 years the population is " + answer );
+    }
+
 }

@@ -16,5 +16,18 @@ import java.util.Scanner;
 
 public class Exercise_01 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("What degree in Celsius?: ");
+        // assign input to variable as double
+        double ctemp = scanner.nextInt();
+
+        double ftemp = 9 * (ctemp / 5) + 32;
+
+        System.out.println(ctemp + "degrees celsius is" + ftemp + " degrees farenheit");
+    }
+
 
 }

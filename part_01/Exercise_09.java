@@ -8,5 +8,19 @@ package part_01;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args) {
 
+        double w,h,a,p;
+
+        w = 2.4;
+        h= 6.4;
+
+        a = (w*h);
+        p = ((w*2) + (h*2));
+
+        System.out.println("Area is " + a + " Perimeter is " + p);
+
+
+    }
 }
+

@@ -10,4 +10,19 @@ package part_01;
 
 public class Exercise_10 {
 
+    public static void main(String[] args) {
+
+        double km = 12;
+        double secs = 1830;
+        double avg = (secs/km)/60;
+
+        System.out.println("Average per km is " + avg + " mins");
+
+        double avgmiles = avg/1.6;
+
+        System.out.println("Average per mile is "+ avgmiles + " mins");
+
+
+    }
+
 }

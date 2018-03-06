@@ -13,5 +13,32 @@ import java.util.Scanner;
  */
 public class Exercise_05 {
 
-}
+    public static void main(String[] args) {
 
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("Give me a number: ");
+        // assign input to variable as int
+        int number = scanner.nextInt();
+
+            if (number == 1) {
+                System.out.println("ONE");
+                if (number == 2) {
+                    System.out.println("TWO");
+                    if (number == 3) {
+                        System.out.println("THREE");
+                        if (number == 4) {
+                            System.out.println("FOUR");
+                            if (number == 5) {
+                                System.out.println("FIVE");
+
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }

@@ -18,4 +18,27 @@ import java.util.Scanner;
 
 public class Exercise_12 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("How far are you going? (in miles): ");
+        // assign input to variable as int
+        float miles = scanner.nextInt();
+
+        // prompt user
+        System.out.print("What's the cars MPG?: ");
+        // assign input to variable as int
+        float mpg = scanner.nextInt();
+
+        // prompt user
+        System.out.print("What's the price per gallon?: ");
+        // assign input to variable as int
+        float ppg = scanner.nextInt();
+
+        float cost = ((miles/mpg)*ppg);
+
+        System.out.println("Your trip will cost " + cost);
+
+    }
 }

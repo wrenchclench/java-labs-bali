@@ -19,6 +19,30 @@ import java.util.Scanner;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("Investment: ");
+        // assign input to variable as int
+        int principal = scanner.nextInt();
+
+        // prompt user
+        System.out.print("Interest Rate: ");
+        // assign input to variable as int
+        int interest = scanner.nextInt();
+
+        // prompt user
+        System.out.print("Term (in years): ");
+        // assign input to variable as int
+        int term = scanner.nextInt();
+
+        double rate = (1 + interest/100);
+        double totalReturn = principal*(Math.pow(rate, term));
+
+        System.out.println("Your financial return is " + totalReturn);
+    }
+
 }
 
 
