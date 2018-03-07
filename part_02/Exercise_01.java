@@ -22,11 +22,11 @@ public class Exercise_01 {
         // prompt user
         System.out.print("What degree in Celsius?: ");
         // assign input to variable as double
-        double ctemp = scanner.nextInt();
+        double ctemp = scanner.nextDouble();
 
         double ftemp = 9 * (ctemp / 5) + 32;
 
-        System.out.println(ctemp + "degrees celsius is" + ftemp + " degrees farenheit");
+        System.out.println(ctemp + "degrees celsius is " + ftemp + " degrees farenheit");
     }
 
 

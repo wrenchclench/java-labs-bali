@@ -24,17 +24,17 @@ public class Exercise_12 {
         // prompt user
         System.out.print("How far are you going? (in miles): ");
         // assign input to variable as int
-        float miles = scanner.nextInt();
+        float miles = scanner.nextFloat();
 
         // prompt user
         System.out.print("What's the cars MPG?: ");
         // assign input to variable as int
-        float mpg = scanner.nextInt();
+        float mpg = scanner.nextFloat();
 
         // prompt user
         System.out.print("What's the price per gallon?: ");
         // assign input to variable as int
-        float ppg = scanner.nextInt();
+        float ppg = scanner.nextFloat();
 
         float cost = ((miles/mpg)*ppg);
 

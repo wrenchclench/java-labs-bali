@@ -14,5 +14,11 @@ public class Exercise_05 {
 
     public static void main(String[] strings) {
 
+        int myArray[] = {4,8,100,56,29};
+
+        for(int x : myArray) {
+            System.out.println(x);
+
+        }
     }
 }

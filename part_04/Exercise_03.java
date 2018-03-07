@@ -16,5 +16,16 @@ public class Exercise_03 {
 
     public static void main(String[] strings) {
 
+
+        int[][] table = new int[5][10];
+
+        for (int t = 0; t < 5; t++) {
+            for (int i = 0; i < 10; i++) {
+                table[t][i] = (t * 10) + i + 1;
+                System.out.print(table[t][i] + " ");
+            }
+            System.out.println(" ");
+        }
     }
 }
+

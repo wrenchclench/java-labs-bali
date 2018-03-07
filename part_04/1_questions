@@ -2,33 +2,65 @@ Answer the following questions:
 
 1) What is an array?
 
+a collection of variables of the same type, referred to by a common name.
+
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
+
+String cats[] = new int [10];
 
 3) What is a multidimensional array?
 
+An array of arrays
+
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
+
+int scores[][] = new int [6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
 
+sout dogs[10]
+
 6) What is an ArrayIndexOutOfBoundsException?
 
+Thrown when an out-of-range index is detected by an array object.
+An out-of-range index occurs when the index is less than zero or greater than or equal to the size of the array.
+
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
+ sout array.length[] -2
+
+ ??????????????
+
 
 8) What is the maximum allowable size of an array in Java?
+no max
 
 9) What is a bubble sort?
 
+ A way to sort an array from lowest to highest
+
 10) How does a bubble sort work?
 
+Iterates over itself and checks to see if the adjacent value is higher or lower and exchanges values where necessary.
+
 11) When might you use an irregular array? What is a good example of an irregular array?
+When you know the amount of data to be stored will be changing. A bus that does 10 trips mon-fri and only 2 sat-sun.
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
 
+for (i = 0; i < array.length; i++) sout i
+
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
 
+while (i < array.length){
+sout i
+}
+
 14) What is a queue?
+An ordered list of object. data that is processed first in first out
 
 15) What are the two primary operations that a queue performs?
+
+
 
 16) What is a stack?
 

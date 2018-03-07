@@ -16,7 +16,7 @@ public class Exercise_09 {
         do {
             System.out.println(c);
             c--;
-        } while (c <= 'Z');
+        } while (c >= 'A');
 
     }
 }

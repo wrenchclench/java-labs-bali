@@ -4,63 +4,104 @@ Answer the following questions
 
 1) What is an instance variable?
 
+A way of storing data within the instance of an object.
 
 2) How do you create a new object?
 
+By creating a class and assigning variables.
 
 3) After creating a new object, how do you set that objects instance variables?
 
+Define it's data type and name. (ex. int audience)
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
 
+A variable that refers to an object instead of a primitive type variable. You need to be careful because you are changing the
+object that that the reference variable refers to.
 
 5) How many methods can you have in a class?
-
+Unlimited
 
 6) How do you exit a method at any point?
-
+return
 
 7) What is the method signature required to return an "int" from a method?
 
+int someMeth (){
+}
 
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
 
+int someMeth(){
+    int num = 10;
+    return num;
+    }
 
 9) How do you pass a parameter to a method?
+Declare it inside the parantheses that follow the methods name.
 
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
-
+int sum(a,b){
+ sum = a+b;
+ return sum;
+ }
 
 11) What is a constructor?
+It initializes an object when it is created.
 
 
 12) How does Java treat a class without a constructor?
+All classes "have" constructors. Java will put everything to null, zero and false.
 
 
 13) What would the constructor for "public class Animal" look like?
 
+public class Animal(int e, boolean f){
+    eyes = e;
+    fur = f;
+    }
+
 
 14) What is the effect of passing parameters to a constructor?
+
+It initializes the instance variable.
 
 
 15) When should you pass parameters to a constructor?
 
+When you want to ensure that an objcet is created with the required data points.
+
 
 16) What does the finalize() method do?
+
+Ensures an object terminates cleanly.
 
 
 17) What does the "this" keyword do?
 
+allows you to refer to variables within the object.
+
 
 18) When should you use the "this" keyword?
+
+When referencing a variable within the same object.
 
 
 19) Write an example of the "this" keyword in action.
 
+Animal(int e, boolean f){
+this.e = e;
+this.f = f;
+}
 
 20.) EXplain the difference between static and non-static variables.
+
+Static - you only need to specify the name of its class followed by the dot operator.
+Non static - you need to create an objcet.
 
 
 21.) Explain the difference between static and non-static methods.
 
+Static - called through the class name
+Non-static - needs an object of that class created

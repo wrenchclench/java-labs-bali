@@ -9,3 +9,23 @@ package part_03;
 
  */
 
+class MyClass {
+
+    public static void main(String[] args) {
+
+        int x = multiply(3,5);
+        int y = addTen(5);
+
+        System.out.println(x+y);
+
+
+    }
+
+    static int multiply(int a, int b){
+        return a*b;
+    }
+
+    static int addTen(int c){
+        return c+10;
+    }
+}

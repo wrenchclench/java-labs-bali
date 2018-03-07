@@ -15,3 +15,32 @@ import java.util.Scanner;
  Output can be on one line or many lines. However you like.
 
  */
+
+class SomeArray {
+    public static void main(String[] args) {
+        int myArray[] = new int[10];
+
+        myArray[0] = 1;
+        myArray[1] = 2;
+        myArray[2] = 3;
+        myArray[3] = 4;
+        myArray[4] = 5;
+        myArray[5] = 6;
+        myArray[6] = 7;
+        myArray[7] = 8;
+        myArray[8] = 9;
+        myArray[9] = 10;
+
+        System.out.println(myArray[1]);
+        System.out.println(myArray[3]);
+        System.out.println(myArray[5]);
+        System.out.println(myArray[7]);
+        System.out.println(myArray[9]);
+        System.out.println(myArray[8]);
+        System.out.println(myArray[6]);
+        System.out.println(myArray[4]);
+        System.out.println(myArray[2]);
+        System.out.println(myArray[0]);
+
+    }
+}
