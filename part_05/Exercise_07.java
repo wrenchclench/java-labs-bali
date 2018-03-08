@@ -1,72 +1,78 @@
 package part_05;
 
 /**
- * Write two classes. Class_01 should have the main(). Class_02 should have various instance variables. At least one of
- * must be static. Within class_01 create at least 3 instances of class_02. Set the instance variables of class_02. Then,
- * just once, in one place, set the static instance variable in class_02. Afterwards, print out the value of each instance
- * variable and the static variable for each class.
+ * Write two classes.
+ *
+ * Class_01 should have the main().
+ *
+ * Class_02 should have various instance variables. At least one of must be static.
+ *
+ * Within class_01 create at least 3 instances of class_02.
+ *
+ * Set the instance variables of class_02.
+ *
+ * Then, just once, in one place, set the static instance variable in class_02.
+ *
+ * Afterwards, print out the value of each instance variable and the static variable for each class.
  */
 
-class BaseballTeams {
 
-    private String league;
-    private char division;
-    static int numOfPlayers;
+class Shirt {
 
-    public String getLeague() {
-        return league;
+    int pockets;
+    int buttons;
+    static boolean collar;
+
+    public Shirt(int pockets, int buttons) {
+        this.pockets = pockets;
+        this.buttons = buttons;
     }
 
-    public void setLeague(String league) {
-        this.league = league;
+    public int getPockets() {
+        return pockets;
     }
 
-    public char getDivision() {
-        return division;
+    public void setPockets(int pockets) {
+        this.pockets = pockets;
     }
 
-    public void setDivision(char division) {
-        this.division = division;
+    public int getButtons() {
+        return buttons;
     }
 
-    public static int getNumOfPlayers() {
-        return numOfPlayers;
+    public void setButtons(int buttons) {
+        this.buttons = buttons;
     }
 
-    public static void setNumOfPlayers(int numOfPlayers) {
-        BaseballTeams.numOfPlayers = numOfPlayers;
+    public static boolean isCollar() {
+        return collar;
+    }
+
+    public static void setCollar(boolean collar) {
+        Shirt.collar = collar;
+    }
+
+    @Override
+    public String toString() {
+        return "Shirt{" +
+                "pockets=" + pockets +
+                ", buttons=" + buttons +
+                '}';
     }
 }
 
-
-class TeamConstructor {
-
+class ShirtDemo {
     public static void main(String[] args) {
 
-        BaseballTeams blueJays = new BaseballTeams();
-        BaseballTeams indians = new BaseballTeams();
-        BaseballTeams reds = new BaseballTeams();
-        BaseballTeams rockies = new BaseballTeams();
+        Shirt shirt1 = new Shirt(2, 3);
+        Shirt shirt2 = new Shirt(4,8);
+        Shirt shirt3 = new Shirt(2,1);
 
+        Shirt.collar = true;
 
-        blueJays.setDivision('E');
-        blueJays.setLeague("AL");
-
-        indians.setLeague("AL");
-        indians.setDivision('C');
-
-        reds.setLeague("NL");
-        reds.setDivision('C');
-
-        rockies.setLeague("NL");
-        rockies.setDivision('W');
-
-        BaseballTeams.numOfPlayers=32;
-
-        System.out.println("The Blue Jays have " + " " + BaseballTeams.numOfPlayers + " " + "players");
-        System.out.println("The Blue Jays are in the" + " " + blueJays.getLeague());
-
-
+        System.out.println("Shirt 1 has  " + shirt1.toString());
+        System.out.println("Shirt 2 has  " + shirt2.toString());
+        System.out.println("Shirt 3 has  " + shirt3.toString());
     }
-
 }
+

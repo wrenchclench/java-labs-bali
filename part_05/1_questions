@@ -2,57 +2,122 @@ Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
 
+public, private, protected
+
 2) Briefly explain each acm and how they differentiate from each other?
+
+public - class  is can be accessed by any other code in the program
+private - class can be accessed only by members of its class
+protected - class is accessible within its package and to all subclasses.
 
 3) Why do we use acm's?
 
+To ensure that we control what data or methods can be changed.
+
 4) What is the risk of not using acm's?
+
+Easy to make changes to written code either on purpose or by mistake resulting in busted code.
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
 
+public static void myCar (Car){
+}
+
 6) Write a method signature that returns an object of type "Car".
+
+void myCar (Car){
+return Car;
+
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
 
+That the reference variables will change as they're passed from one method to another.
+
 8) What is method overloading?
+
+When we allow a method to accept multiple sets of parameters (or none).
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
 
+So we can still run methods based on different paramers being passed.
+
 10) How do you overload a method? What signifies that a method is being overloaded?
+
+When it is listed multiple times and has the same name but different parameter requirements.
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
 
+void someMeth()
+void someMeth(int a)
+void someMeth(double a, double b)
+
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
 
+Add different parameter(s) to the same constructor. When a constructor of the same name has multiple parameters it can accept.
+
 13) Why do we overload constructors?
+Provide flexibility in the way objects are constructed.
 
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
 
+MyClass()
+MyClass(int a)
+MyClass(char x)
+
 15) What is recursion?
+
+When a method calls itself.
 
 16) What important considerations must you keep in mind when using recursion?
 
+
+
 17) How do you make a method recursive?
+
+Return the result to the method
 
 18) How do you escape a recursive method?
 
+using an if statement
+
 19) Explain what "static" is all about?
+
+Defining a class member that will be used independantly of any object of that class.
 
 20) When should you use "static"?
 
+ When you want a class member that will be used independantly of any object of that class.
+
 21) What differentiates static variables from instance variables?
+
+They are global variables meaning that when an object is created no copy of a static variable is created.
 
 22) What is a the quicksort? Briefly describe how the quicksort works.
 
+A sorting algorithm. You set a value as the middle value (or like a post) and then sort the rest of the values onto each side of the post.
+Then repeat that process.
+
 23) What is a nested, or inner, class?
+
+A class declared within another class.
 
 24) What is the scope of a nested class?
 
+The extent of it's outer classes.
+
 25) What is a variable-arity method?
+
+A method that takes a variable number of arguements.
 
 26) What makes a variable-arity method unique? When should you use it?
 
+It can accept any number of arguments. When we don't know how many arguments may be passed to the method.
+
 27) What is the shorthand name for variable-arity?
 
+Varargs
+
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
+
+When you overload a method with varargs the compiler will not know which is correct.
