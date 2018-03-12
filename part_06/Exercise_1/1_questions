@@ -37,7 +37,9 @@ the mechanism by which a call to an overridden method is resolved at run time in
 
 10) What does the "final" keyword do?
 
-
+Prevents overriding of your code.
 
 11) Are classes in Java are a subclass of what super class?
+
+Object
 

@@ -55,6 +55,7 @@ class Country {
 
 // Constructor 1
     public Country(int pop) {
+
         this.pop = pop;
     }
 
@@ -71,14 +72,17 @@ class Country {
     }
 
     public int getPop() {
+
         return pop;
     }
 
     public void setPop(int pop) {
+
         this.pop = pop;
     }
 
     public boolean isDemocracy() {
+
         return democracy;
     }
 
