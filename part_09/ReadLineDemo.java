@@ -5,10 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-// Demonstrate how to read file using BufferedReader - demonstrate both the read() and readLine() methods()
-//be sure to close all connections
-
-public class Exercise_03 {
+public class ReadLineDemo {
 
         public static void main(String[] args) throws Exception {
             InputStream is = null;
@@ -26,16 +23,13 @@ public class Exercise_03 {
                 // create new buffered reader
                 br = new BufferedReader(isr);
 
-                int value = 0;
+                String thisLine;
 
                 // reads to the end of the stream
-                while((value = br.read()) != -1) {
-
-                    // converts int to character
-                    char c = (char)value;
+                while((thisLine = br.readLine()) != null) {
 
                     // prints character
-                    System.out.println(c);
+                    System.out.println(thisLine);
                 }
 
             } catch(Exception e) {
@@ -52,10 +46,4 @@ public class Exercise_03 {
             }
         }
     }
-
-
-
-
-
-
 
