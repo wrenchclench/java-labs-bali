@@ -9,11 +9,11 @@ package part_04;
 class MyArray {
     public static void main(String[] args) {
 
-        int[] years = new int[2018];
+        int[] years = new int[2017];
 
-        for (int i = 1; i <= 2017; i++) {
+        for (int i = 1; i < 2017; i++) {
 
-            years[i] = i;
+            years[i] = i +1;
 
         }
 

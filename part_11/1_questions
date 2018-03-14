@@ -1,12 +1,16 @@
 1) Turn the following into a Generic interface:
 
-   public interface Consumer {
+   public interface Consumer<T> {
        public void consume(String parameter)
    }
 
 2) What are a few advantages of using Generic types?
 
+They will automatically work with the type of data passed to its type parameter.
+
 3) What is Type Erasure?
+
+Replace all type parameters in generic types with their bounds or Object if the type parameters are unbounded
 
 4) Assuming the following snippet:
 
@@ -18,10 +22,27 @@
     Integer i = returnType(1);
     String s = returnType("String");
 
+    yes
+
 5) What is a Bounded Type Parameter?
 
+a type parameter we use to specify the data type is only certain subclasses. ex. Number
+
 6) Demonstrate the use of Generic Wildcard in a method signature:
+public <?> someMeth(){
+}
 
 7) What are bounded and unbounded wildcards in Generics?
 
+bounded and unbounded wildcards in generics are used to bound any Type. Type can be upper bounded by using <? extends T>
+where all Types must be sub-class of T or lower bounded using <? super T> where all Types required to be the super class
+of T, here T represent the lower bound. Single <?> is called an unbounded wildcard in generic and it can represent any
+type, similar to Object in Java.
+
+
+
 8) What is difference between List<? extends T>  and  List <? super T> ?
+bounded and unbounded wildcards in generics are used to bound any Type. Type can be upper bounded by using <? extends T>
+where all Types must be sub-class of T or lower bounded using <? super T> where all Types required to be the super class
+of T, here T represent the lower bound. Single <?> is called an unbounded wildcard in generic and it can represent any
+type, similar to Object in Java.

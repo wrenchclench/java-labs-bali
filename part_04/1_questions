@@ -18,7 +18,7 @@ int scores[][] = new int [6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
 
-sout dogs[10]
+sout String dog = dogs[10]
 
 6) What is an ArrayIndexOutOfBoundsException?
 
@@ -26,13 +26,10 @@ Thrown when an out-of-range index is detected by an array object.
 An out-of-range index occurs when the index is less than zero or greater than or equal to the size of the array.
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
- sout array.length[] -2
-
- ??????????????
-
+ sout int x = someArray [array.length -2]
 
 8) What is the maximum allowable size of an array in Java?
-no max
+like 2B, the integer max
 
 9) What is a bubble sort?
 
@@ -47,35 +44,49 @@ When you know the amount of data to be stored will be changing. A bus that does 
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
 
-for (i = 0; i < array.length; i++) sout i
+for (i = 0; i < array.length; i++) sout [i]
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
 
 while (i < array.length){
-sout i
+sout [i]
 }
 
 14) What is a queue?
 An ordered list of object. data that is processed first in first out
 
 15) What are the two primary operations that a queue performs?
-
+put and get
 
 
 16) What is a stack?
 
+data that is first in last out
+
 17) What differentiates stacks and queues?
 
+push and pop
+
 18) When would you use an enhanced for loop?
+
+itierate through the elements of a collection
 
 19) What is "The Collections Framework"? What classes does it include?
 
 20) How do you iterate over a two-dimensional array? Demonstrate using psuedo code.
+for and nested for
 
 21) What is a String?
+ an object that is a sequence of characters
 
 22) What are a few common methods for operating on Strings?
 
+length, charAt, subString
+
 23) What does "Strings are immutable" mean?
 
+cant be changed
+
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
+
+java application name
