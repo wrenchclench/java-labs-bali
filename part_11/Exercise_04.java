@@ -7,7 +7,7 @@ package part_11;
  */
 
 
-public class sumArray <E extends Number> {
+public class Exercise_04 <E extends Number> {
 
     public E sumArray(E[] randomArray) {
 
