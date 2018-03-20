@@ -20,7 +20,7 @@ Easy to make changes to written code either on purpose or by mistake resulting i
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
 
-public static void myCar (Car){
+public static void myCar (Car car){
 }
 
 6) Write a method signature that returns an object of type "Car".
@@ -108,7 +108,7 @@ The extent of it's outer classes.
 
 25) What is a variable-arity method?
 
-A method that takes a variable number of arguements.
+A method that takes a variable number of arguments.
 
 26) What makes a variable-arity method unique? When should you use it?
 

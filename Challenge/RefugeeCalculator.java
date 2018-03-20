@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class RefugeeCalculator {
 
@@ -27,7 +28,12 @@ public class RefugeeCalculator {
 
         ArrayList<RefugeeStats> stats = obj.parseFile(path);
 
-        System.out.println("Ratio of refugees to population is " + totalRefuPop(stats)/totalPop(stats));
+        System.out.println("Sum of the populations for the whole period is: " + totalPop(stats));
+        System.out.println("Sum of the refugee populations for the whole period is: " + totalRefuPop(stats));
+        System.out.println("Ratio of refugees to population is: " + totalRefuPop(stats)/totalPop(stats));
+
+        totalPopByYear(stats);
+        totalRefuPopByYear(stats);
 
     }
 
@@ -103,10 +109,11 @@ public class RefugeeCalculator {
         double sum = 0;
 
         for (RefugeeStats r : data) {
-            sum += r.getPopulation();
+            while (r.getYear() == 2001) {
+                sum += r.getPopulation();
+                break;
+            }
         }
-
-        System.out.println("The sum of the populations all time is " + sum);
         return sum;
     }
 
@@ -120,10 +127,63 @@ public class RefugeeCalculator {
                     refuSum += r.getRefugees();
             }
 
-        System.out.println("The sum of the refugees all time is " + refuSum);
         return refuSum;
     }
+
+    public static double totalPopByYear(ArrayList<RefugeeStats> data) {
+
+        // For each object of RefugeeStats in the ArrayList of RefugeeStats objects get the population and add them
+        double sum = 0;
+
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("To find the total population for a given year, input year here:  ");
+        // assign input to variable as int
+        int userChosenYear = scanner.nextInt();
+
+        if(userChosenYear >= 2015 || userChosenYear <= 2001){
+            System.out.println("Data only available between 2001 and 2015");
+        }
+
+        for (RefugeeStats r : data) {
+            while (r.getYear() == userChosenYear) {
+                sum += r.getPopulation();
+                break;
+            }
+        }
+        System.out.println("The total of the populations for that year is " + sum);
+        return sum;
+    }
+
+    public static double totalRefuPopByYear(ArrayList<RefugeeStats> data) {
+
+        // For each object of RefugeeStats in the ArrayList of RefugeeStats objects get the population and add them
+        double sum = 0;
+
+        // create scanner
+        Scanner scanner = new Scanner(System.in);
+        // prompt user
+        System.out.print("To find the total refugee population for a given year, input year here:  ");
+        // assign input to variable as int
+        int userChosenYear = scanner.nextInt();
+
+        if(userChosenYear >= 2015 || userChosenYear <= 2001){
+            System.out.println("Data only available between 2001 and 2015");
+        }
+
+        for (RefugeeStats r : data) {
+            while (r.getYear() == userChosenYear) {
+                sum += r.getRefugees();
+                break;
+            }
+        }
+        System.out.println("The total of the refugee populations for that year is " + sum);
+        return sum;
+    }
 }
+
+
 
 
 
